@@ -44,63 +44,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 200;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Bold");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: local("Helvetica Neue Regular");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: local("Helvetica Neue Regular");
-  font-weight: 200;
-}
-
-
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-}
-@media all and (-ms-high-contrast: none)  {
-  html {
-    font-family: Verdana, Meiryo, sans-serif;
-  }
-}
-@media all and (-ms-high-contrast: active) {
-  html {
-    font-family: Verdana, Meiryo, sans-serif;
-  }
-}
-
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
-
 
 body {
 	margin: 0;
@@ -317,11 +265,62 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+@media all and (-ms-high-contrast: none)  {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+@media all and (-ms-high-contrast: active) {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -759,6 +758,16 @@ a:hover, a:active {
 .site{
 	max-width: 1800px;
 	margin:0 5% 0;
+}
+
+.site-branding{
+	text-align: center;
+}
+.site-branding img{
+	max-width: 120px;
+}
+.site-branding h1,.site-branding p{
+	margin-top: 0;
 }
 
 /*--------------------------------------------------------------
